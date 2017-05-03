@@ -1,55 +1,32 @@
-Yii 2 Advanced Project Template
-===============================
+BlogDemo 2
+==========
 
-Yii 2 Advanced Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
-developing complex Web applications with multiple tiers.
+简介
+----
+BlogDemo2是用来配合《新版魏曦教你学Yii2.0》视频教程进行讲解的例子, 视频教程详见http://www.weixistyle.com.
 
-The template includes three tiers: front end, back end, and console, each of which
-is a separate Yii application.
+BlogDemo2是一个博客系统，需求是参照了Yii1.0里面经典的例子blogdemo，然后用Yii2.0来进行改写的。
 
-The template is designed to work in a team development environment. It supports
-deploying the application in different environments.
+较之前发布的Yii2Blog，这个版本采用了Advanced应用模板，并且增加了更多功能：基于数据库表的用户认证、RABC功能、控制台命令、SEO URL 美化、缓存等等。
 
-Documentation is at [docs/guide/README.md](docs/guide/README.md).
+为了方便大家学习，我把每一阶段做了版本标记，你可以根据自己的学习情况，选择合适的版本下载。
 
-[![Latest Stable Version](https://poser.pugx.org/yiisoft/yii2-app-advanced/v/stable.png)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![Total Downloads](https://poser.pugx.org/yiisoft/yii2-app-advanced/downloads.png)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![Build Status](https://travis-ci.org/yiisoft/yii2-app-advanced.svg?branch=master)](https://travis-ci.org/yiisoft/yii2-app-advanced)
+欢迎你的意见和建议，也非常欢迎Pull Requests.
 
-DIRECTORY STRUCTURE
--------------------
 
-```
-common
-    config/              contains shared configurations
-    mail/                contains view files for e-mails
-    models/              contains model classes used in both backend and frontend
-    tests/               contains tests for common classes    
-console
-    config/              contains console configurations
-    controllers/         contains console controllers (commands)
-    migrations/          contains database migrations
-    models/              contains console-specific model classes
-    runtime/             contains files generated during runtime
-backend
-    assets/              contains application assets such as JavaScript and CSS
-    config/              contains backend configurations
-    controllers/         contains Web controller classes
-    models/              contains backend-specific model classes
-    runtime/             contains files generated during runtime
-    tests/               contains tests for backend application    
-    views/               contains view files for the Web application
-    web/                 contains the entry script and Web resources
-frontend
-    assets/              contains application assets such as JavaScript and CSS
-    config/              contains frontend configurations
-    controllers/         contains Web controller classes
-    models/              contains frontend-specific model classes
-    runtime/             contains files generated during runtime
-    tests/               contains tests for frontend application
-    views/               contains view files for the Web application
-    web/                 contains the entry script and Web resources
-    widgets/             contains frontend widgets
-vendor/                  contains dependent 3rd-party packages
-environments/            contains environment-based overrides
-```
+安装说明
+--------
+
+1.把文件解压后的目录blogdemo2拷贝到WWW服务器根目录。
+
+2.建立数据库blogdemo2db，导入database文件夹中的SQL文件。
+
+不同版本需要导入的SQL文件有不同，他们的对应关系参见database文件夹中的readme.md文件。
+
+3.登录系统：
+
+前台：http://localhost/blogdemo2/frontend/web/index.php
+
+后台：http://localhost/blogdemo2/backend/web/index.php
+
+用户名：weixi   密码：123456
